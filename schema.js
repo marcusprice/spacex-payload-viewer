@@ -20,6 +20,18 @@ const PayloadType = new GraphQLObjectType({
   })
 })
 
+//payload type
+const Customers = new GraphQLObjectType({
+  name: 'customers',
+  fields: () => ({
+    payload_id: { type: GraphQLString },
+    nationality:  { type: GraphQLString },
+    manufacturer:  { type: GraphQLString },
+    payload_type:  { type: GraphQLString },
+    payload_mass_lbs: { type: GraphQLString }
+  })
+})
+
 //root query
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
