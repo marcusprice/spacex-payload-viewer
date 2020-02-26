@@ -12,9 +12,9 @@ html, body, * {
 }
 
 header {
+  background-image: linear-gradient(to right top, #855988, #654473, #46305e, #271e49, #070b34);
   width: 100%;
-  height: 25vh;
-  border: solid gray 1px;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +29,20 @@ ul {
 li {
   margin: 0 16px;
   display: inline-block;
+}
+
+
+/*typeography styles*/
+
+h1, li {
+  color: #eee;
+  font-family: 'Montserrat';
+}
+
+h1 {
+  font-size: 48px;
+}
+
+li {
+  font-size: 24px;
 }
