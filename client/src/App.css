@@ -1,3 +1,4 @@
+/*layout styles*/
 html, body, * {
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -14,11 +15,21 @@ html, body, * {
 header {
   background-image: linear-gradient(to right top, #855988, #654473, #46305e, #271e49, #070b34);
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+section {
+  margin: 0 auto;
+  padding: 24px 0;
+  max-width: 1200px;
+  justify-items: center;
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 ul {
@@ -31,18 +42,53 @@ li {
   display: inline-block;
 }
 
+.content-card {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.content-card-header {
+  position: absolute;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: .25;
+}
+
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /*typeography styles*/
-
-h1, li {
-  color: #eee;
+h1, h2, h3, li {
   font-family: 'Montserrat';
 }
 
 h1 {
+  color: #eee;
   font-size: 48px;
 }
 
+h2 {
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
 li {
+  color: #eee;
   font-size: 24px;
 }
