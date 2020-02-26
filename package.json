@@ -1,15 +1,15 @@
 {
-  "name": "graphql-practice",
+  "name": "spacex-payload-viewer",
   "version": "1.0.0",
-  "description": "Simple app to learn more about graphql",
+  "description": "Simple app that displays spacex paylaod data. Made this to learn more about graphql.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app"
   },
   "author": "Marcus Price",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "graphql": "^14.6.0"
   }
 }
