@@ -1,6 +1,5 @@
 import React from 'react';
 import payload from '../img/payload.jpg';
-import rocket from '../img/rocket.jpg';
 
 const PayloadCard = (props) => {
 
