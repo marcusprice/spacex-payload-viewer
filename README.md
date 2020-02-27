@@ -19,4 +19,15 @@ const PayloadType = new GraphQLObjectType({
 ```
 
 ## RocketType
-Check back - info for the this GraphQL object type is coming really soon.
+This is the GraphQL object type for rockets. The schema for RocketType looks like this:
+```
+//rocket type
+const RocketType = new GraphQLObjectType({
+  name: 'Rocket',
+  fields: () => ({
+    rocket_id: { type: GraphQLString },
+    rocket_name: { type: GraphQLString },
+    rocket_type: { type: GraphQLString }
+  })
+});
+```
